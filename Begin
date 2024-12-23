@@ -1,0 +1,19 @@
+print("start")
+###############
+
+x = 55
+y = "DEF"
+
+print(x, y)
+###############
+
+a = str(5)
+b = " ABC"
+
+print(a+b)
+################
+
+print(type(x), type(y), type(a+b))
+################
+
+
