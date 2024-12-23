@@ -1,0 +1,29 @@
+########
+print()     # print("\n") leaves 2 lines
+########
+
+g = "global var"
+
+def first():
+    print("First function")
+
+
+def g():
+    a = "Inside g"
+    global b        #"global" will allow b to be used globally (but to make b global, you need to call this function once)
+    b = "use me anywhere"
+g()
+print (b)
+
+
+def greet(name):
+    print("Hello " + name)
+    
+greet("Dev")
+
+n = "Prasu"
+greet(n)
+
+#########
+print()
+#########
