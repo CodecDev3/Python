@@ -1,0 +1,12 @@
+#--------------- Paragraphs ---------------
+
+# You can use three double quotes: OR three single quotes:
+
+text = """first line,
+second line
+and third line"""
+
+print(text)
+
+#------------------------------
+
