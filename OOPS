@@ -16,13 +16,15 @@ g()
 print (b)
 
 
-def greet(name):
+def greet(name,name2):
     print("Hello " + name)
+    print("Hello Mr.2 " + name2)
     
-greet("Dev")
+greet("Dev " + "Patel", "DP")
 
 n = "Prasu"
-greet(n)
+greet(n,"2")
+
 
 #########
 print()
