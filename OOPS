@@ -23,8 +23,85 @@ def greet(name,name2):
 greet("Dev " + "Patel", "DP")
 
 n = "Prasu"
-greet(n,"2")
+greet(n,"10")
 
+#####################################
+
+class MyClass:
+
+    def function_one(self, name):
+        return f"Hello, {name}!"
+    
+    def function_two(self, a, b):
+        return a + b
+
+# Creating an instance of the class
+my_object = MyClass()
+
+# Calling the functions (when calling from an instance, use "self" in def)
+print(my_object.function_one("Alice"))  # Hello, Alice!
+print(my_object.function_two(5, 3))     # 8
+
+# Direct calling (no need of "self" in def)
+print(MyClass.function_one("Blue"))
+print(MyClass.function_two(25,-9))
+
+'''
+In Python, you can call methods directly from a class without creating an instance if the methods are defined as **class methods** or **static methods**. Here's how:
+
+### Using `@staticmethod`
+If the method doesn't need access to the class or instance, you can use `@staticmethod`.
+
+```python
+class MyClass:
+    @staticmethod
+    def function_one(name):
+        """First static method to greet the user."""
+        return f"Hello, {name}!"
+    
+    @staticmethod
+    def function_two(a, b):
+        """Second static method to add two numbers."""
+        return a + b
+
+# Calling the methods directly from the class
+print(MyClass.function_one("Alice"))  # Output: Hello, Alice!
+print(MyClass.function_two(5, 3))    # Output: 8
+```
+
+### Using `@classmethod`
+If the method needs access to the class (but not to an instance), use `@classmethod`.
+
+```python
+class MyClass:
+    class_variable = "I am a class variable"
+
+    @classmethod
+    def function_one(cls, name):
+        """First class method to greet the user and show a class variable."""
+        return f"Hello, {name}! {cls.class_variable}"
+    
+    @classmethod
+    def function_two(cls, a, b):
+        """Second class method to add two numbers."""
+        return a + b
+
+# Calling the methods directly from the class
+print(MyClass.function_one("Alice"))  # Output: Hello, Alice! I am a class variable
+print(MyClass.function_two(5, 3))    # Output: 8
+```
+
+### Key Differences
+- **`@staticmethod`**:
+  - Doesn't take `self` or `cls` as its first argument.
+  - Cannot access instance or class variables.
+- **`@classmethod`**:
+  - Takes `cls` as its first argument.
+  - Can access class variables or call other class methods.
+
+This approach lets you call methods directly from the class without creating an instance.
+'''
+#####################################
 
 #########
 print()
