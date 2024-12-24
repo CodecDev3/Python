@@ -42,7 +42,7 @@ print(y)
 print(z)
 #################
 
-#----------Numbers----------
+#---------------Numbers---------------
 
 aa = 5 #int
 bb = 61.84 #float
@@ -63,6 +63,22 @@ print(aaa, bbb, ddd, ccc)     # 5.0 61 61 (61.84+0j)
 import random
 print(random.randrange(8,15))
 
+#----------
 
+e = 5
+f = "text"
+g = "3"
+h = "7.3"
 
+ee = str(e)
+print(type(ee))     # str -> "5"
+
+gg = int(g)         # also float(g)
+print(type(gg))     # int
+
+hh = float(h)       # 7.3 converted to float
+hhh = int(hh)       # float converted to int 
+print(hhh)          # 7
+
+#------------------------------
 
