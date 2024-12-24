@@ -40,5 +40,29 @@ x, y, z = fruits
 print(x)
 print(y)
 print(z)
-###############
+#################
+
+#----------Numbers----------
+
+aa = 5 #int
+bb = 61.84 #float
+dd = 61.49 #float
+cc = 8j #Complex (written with j)
+
+#---Convert them---
+
+aaa = float(aa)
+bbb = int(bb)
+ddd = int(dd)
+ccc = complex(bb)
+
+print(aaa, bbb, ddd, ccc)     # 5.0 61 61 (61.84+0j)
+
+#----------
+
+import random
+print(random.randrange(8,15))
+
+
+
 
