@@ -1,3 +1,4 @@
+'''
 print("start")
 ###############
 
@@ -24,6 +25,9 @@ print(c, C)
 #C will not overwrite c
 ################
 
+print(8%3)      # 2
+print(16//3)    # 5
+################
 p,q,r = "P", "Q", "R"
 print(p)
 print(q)
@@ -79,6 +83,65 @@ print(type(gg))     # int
 hh = float(h)       # 7.3 converted to float
 hhh = int(hh)       # float converted to int 
 print(hhh)          # 7
+'''
+#--------------- Booleans ---------------
 
-#------------------------------
+'''             # all are True
+print(10>9)
+print(10!=9)
 
+print(bool("Hello"))
+print(bool(15))
+bool("abc")
+bool(123)
+bool(["apple", "cherry", "banana"])
+'''
+
+'''             # all are False
+print(bool(False))
+print(bool(None))
+print(bool(0))
+print(bool(""))
+print(bool(()))
+print(bool([]))
+print(bool({}))
+'''
+
+def myFunction() :
+  return True # or any value
+
+if myFunction():
+  print("YES!")
+else:
+  print("NO!")
+  
+#--------------- Logical Operators ---------------
+
+x = 3
+
+print(x>5 and x<10) # False
+
+print(x>5 or x<10) # True
+print(not(x>5 or x<10)) #True   # Reverses the result
+
+#--------------- Identity Operators ---------------
+print()
+
+a,b,c = 50,50,105
+
+print(a is b)       # True
+print(a is not b)   # False
+print(a is not c)   # True
+
+#--------------- Membership Operators ---------------
+print()
+
+t1 = "the very first line"
+t2 = "this is the second line"
+t3 = "very"
+
+print("line" in t1)                     # True
+print("line" in t1 and "is" in t2)      # True
+print(t3 in t1)                         # True
+print(t3 in (t1 and t2))                # False
+print(t3 in (t1 or t2))                 # True
