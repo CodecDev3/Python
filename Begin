@@ -34,18 +34,6 @@ print(q)
 print(r)
 ################
 
-#---------Lists---------
-
-cars = ["a", "b", 5, True]
-print(cars)
-
-fruits = ["apple", "banana", "cherry"]
-x, y, z = fruits
-print(x)
-print(y)
-print(z)
-#################
-
 #---------------Numbers---------------
 
 aa = 5 #int
