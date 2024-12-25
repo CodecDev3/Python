@@ -43,6 +43,30 @@ print(clist)        # 'Single' changed to 19
 
 clist[2:5] = ['new',True,15]
 print(clist)        # [88, 'alt', 'new', True, 15, 1.3, True]
+# Also
+clist[2:4] = ['same']   # 2nd & 3rd will change to a single text 'same'
+print(clist)            # [88, 'alt', 'same', 15, 1.3, True]
+
+#--------------- Adding the elements ---------------
+
+dlist = [12,"add",False,'Single',35,1.3,True]
+dlist2 = ['second',15,False]
+
+dlist.append("appended")
+print(dlist)                # [12, 'add', False, 'Single', 35, 1.3, True, 'appended']
+
+dlist.insert(3,"inserted")  # insert data at the 3rd position 
+print(dlist)                # [12, 'add', False, 'inserted', 'Single', 35, 1.3, True, 'appended']
+
+#dlist.append(dlist2)
+#print(dlist)            # [12, 'add', False, 'inserted', 'Single', 35, 1.3, True, 'appended', ['second', 15, False]]
+dlist.extend(dlist2)
+print(dlist)             # [12, 'add', False, 'inserted', 'Single', 35, 1.3, True, 'appended', 'second', 15, False]
+
+#dlist.extend(dlist2[1:])
+#print(dlist)             # [12, 'add', False, 'inserted', 'Single', 35, 1.3, True, 'appended', 15, False]
+
+
 
 #---------------------
 print()
