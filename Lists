@@ -81,14 +81,13 @@ print(rlist)
 # del rlist - delete entire list
 # rlist.clear - clears all the element
 
-'''
 #--------------- Loop ---------------
 
 looplist = [5,87,'txt',True,'t2',45]
 
 for x in looplist:
     print(x)
-# OR
+# OR        # [print(x) for x in looplist]
 a = 0
 while a < len(looplist):
     print(looplist[a])
@@ -97,7 +96,28 @@ while a < len(looplist):
 
 for i in range(len(looplist)):
     print(i)
-    
+
+'''
+#--------------- List Comprehension ---------------
+
+ll1 = ['t1',54,13,True,'t2',"t3"]
+l2 = ['t4',14,25,True,'t5',"t6",False]
+l1 = ["t1",'t2','r1','p2',"p5",'r3','r9']
+l3 = []
+l4 = []
+
+for a in l1:
+    if 't' in a:        # type of elements in list should be same
+        l3.append(a)    # OR l3 = [a for a in l1 if 't' in a]
+
+print(l3)               # ['t1', 't2']
+
+for b in l1:
+    if 'r' in b and b != 'r9':
+        l4.append(b)    # OR l4 = [b for b in l1 if 'r' in b and b != 'r9']
+
+print(l4)               # ['r1', 'r3']
+
 
 #---------------------
 print()
