@@ -10,6 +10,7 @@ Dictionary is a collection which is ordered** and changeable. No duplicate membe
 print()
 #---------------------
 
+'''
 initial_list = ['apple','"banana"','orange']
 print(initial_list)
 
@@ -80,8 +81,23 @@ print(rlist)
 # del rlist - delete entire list
 # rlist.clear - clears all the element
 
+'''
 #--------------- Loop ---------------
 
+looplist = [5,87,'txt',True,'t2',45]
+
+for x in looplist:
+    print(x)
+# OR
+a = 0
+while a < len(looplist):
+    print(looplist[a])
+    a += 1
+    
+
+for i in range(len(looplist)):
+    print(i)
+    
 
 #---------------------
 print()
