@@ -73,7 +73,7 @@ dlist3 = dlist1 + dlist2
 #--------------------- Removing the elements ---------------------
 
 rlist = [65,'removing',False,43,'rem',13,'last']
-rlist.remove('rem')
+rlist.remove('rem')         # OR a = 'rem' -> rlist.remove(a)
 print(rlist)
 
 rlist.pop(1)    # removes 'removing'    # pop() - removes the last item
