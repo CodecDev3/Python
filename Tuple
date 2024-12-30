@@ -1,0 +1,24 @@
+print()
+
+'''
+Tuple items are ordered, unchangeable, and allow duplicate values.
+When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
+Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
+'''
+
+firstt = ('First',34,True)
+# firstt = ('First')    this is not tuple it's a string
+print(firstt)
+
+print(len(firstt))
+
+#--------------------- Convert to tuple ---------------------
+
+l1 = ['list to tuple','go',True]
+t1 = tuple(l1)
+print(t1)
+print(type(t1))
+
+#--------------------- Convert to list ---------------------
+
+print()
