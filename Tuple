@@ -47,7 +47,7 @@ t1 = t1 + t2
 print(t1)           # (1, 2, 'three', 'four', 5)
 
 # del t1            # deletes the tuple completely
-'''
+
 #--------------------- Unpack Tuple ---------------------
 
 f1 = ('banana','cherry','watermelon')
@@ -74,6 +74,22 @@ f3 = ('banana','cherry','watermelon','2last','last')
 print(yellow)       # banana
 print(green)        # last
 print(red)          # ['cherry', 'watermelon', '2last']
+'''
+#--------------------- Loop through Tuple ---------------------
+# all are same
+
+loopt = ('banana',85,'watermelon',False,'last')
+
+for x in loopt:
+    print(x)
+
+for n in range(len(loopt)):
+    print(loopt[n])
+
+i = 0
+while i < len(loopt):
+    print(loopt[i])
+    i += 1
 
 
 print()
