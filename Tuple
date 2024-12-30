@@ -1,7 +1,7 @@
 print()
 
 '''
-Tuple items are ordered, unchangeable, and allow duplicate values.
+Tuple items are ordered, unchangeable, and allow duplicate values. (to change values, convert to list -> change value -> convert to tuple)
 When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
 Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
 '''
@@ -19,7 +19,7 @@ l1 = ['list to tuple','go',True]
 t1 = tuple(l1)
 print(t1)
 print(type(t1))
-'''
+
 #--------------------- Access Tuple Items ---------------------
 
 tup1 = ('hello',87,False,"Slice",12.3)
@@ -27,6 +27,53 @@ print(tup1[3])      # Slice
 print(tup1[1:])     # (87, False, 'Slice', 12.3)
 print(tup1[:3])     # ('hello', 87, False)
 print(tup1[-5:-3])  # ('hello', 87)
+
+if 12.30 in tup1:
+    print('Yes')    # Yes
+   
+#--------------------- Change Tuple Items ---------------------
+
+# (to change values, convert to list -> change value -> convert to tuple) (use all the methods of list (append,pop,extend,remove...))
+
+tup = ('one',2,"three",4.0,True,"six",7)
+lt = list(tup)
+lt[2] = 3
+tup = tuple(lt)
+print(tup)          # ('one', 2, 3, 4.0, True, 'six', 7)
+
+t1 = (1,2,'three')
+t2 = ('four',5)
+t1 = t1 + t2
+print(t1)           # (1, 2, 'three', 'four', 5)
+
+# del t1            # deletes the tuple completely
+'''
+#--------------------- Unpack Tuple ---------------------
+
+f1 = ('banana','cherry','watermelon')
+(yellow,red,green) = f1
+
+print(yellow)       # banana
+print(green)        # watermelon
+print(red)          # cherry
+
+# ---------------------
+
+f2 = ('banana','cherry','watermelon','2last','last')
+(yellow,red,*green) = f2
+
+print(yellow)       # banana
+print(green)        # ['watermelon', '2last', 'last']
+print(red)          # cherry
+
+# ---------------------
+
+f3 = ('banana','cherry','watermelon','2last','last')
+(yellow,*red,green) = f3
+
+print(yellow)       # banana
+print(green)        # last
+print(red)          # ['cherry', 'watermelon', '2last']
 
 
 print()
