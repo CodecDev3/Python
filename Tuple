@@ -6,6 +6,7 @@ When we say that tuples are ordered, it means that the items have a defined orde
 Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
 '''
 
+'''
 firstt = ('First',34,True)
 # firstt = ('First')    this is not tuple it's a string
 print(firstt)
@@ -18,7 +19,14 @@ l1 = ['list to tuple','go',True]
 t1 = tuple(l1)
 print(t1)
 print(type(t1))
+'''
+#--------------------- Access Tuple Items ---------------------
 
-#--------------------- Convert to list ---------------------
+tup1 = ('hello',87,False,"Slice",12.3)
+print(tup1[3])      # Slice
+print(tup1[1:])     # (87, False, 'Slice', 12.3)
+print(tup1[:3])     # ('hello', 87, False)
+print(tup1[-5:-3])  # ('hello', 87)
+
 
 print()
